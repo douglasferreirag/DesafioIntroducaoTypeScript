@@ -1,25 +1,27 @@
-let valorAny: any;
+type input = number | string;
 
-valorAny = 3;
+function somarValores(input1: input,input2: input){
 
-valorAny = "Ola";
+    if(typeof(input1) == "string" ||  typeof(input2) == "string")
 
-valorAny = true;
+        {
 
-let valorString1: string = 'teste';
+                return input1.toString() + input2.toString();
 
-let valorString2: string = 'testao';
+        } else{
 
-valorString1 = valorAny;
+                return input1 + input2;
 
-valorString2 = valorAny;
+        }
 
-function somarStrings(string1: string, string2: string){
 
-        console.log(string1+ string2);
+
+    
 
 }
 
-somarStrings(valorString1, valorString2);
+console.log(somarValores(1,5));
 
-somarStrings('Ola', ', como vai?');
+console.log(somarValores('Olá',', tudo bem?'));
+
+console.log(somarValores('Que dia é hoje? ',5));
