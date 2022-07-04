@@ -1,19 +1,7 @@
 "use strict";
-let anyEstaDeVolta;
-anyEstaDeVolta = 3;
-anyEstaDeVolta = 'teste';
-anyEstaDeVolta = 5;
-let stringTeste = 'verificar';
-stringTeste = anyEstaDeVolta;
-let unknownValue;
-unknownValue = 3;
-unknownValue = 'opa';
-unknownValue = true;
-unknownValue = 'vai sim';
-let stringTest2 = 'agora vai';
-if (typeof (unknownValue) === 'string')
-    stringTest2 = unknownValue;
-function jogaErro(erro, codigo) {
-    throw { error: erro, code: codigo };
-}
-jogaErro('deu erro', 500);
+let buttonTeste = document.getElementById("button");
+buttonTeste === null || buttonTeste === void 0 ? void 0 : buttonTeste.addEventListener('click', () => {
+    if (input1 && input2) {
+        console.log('Funcionou');
+    }
+});
