@@ -1,7 +1,17 @@
 "use strict";
-let buttonTeste = document.getElementById("button");
-buttonTeste === null || buttonTeste === void 0 ? void 0 : buttonTeste.addEventListener('click', () => {
-    if (input1 && input2) {
-        console.log('Funcionou');
+class Mamifero {
+    constructor(nome, temPelos, quantidadeDePatas) {
+        this.nome = nome;
+        this.temPelos = temPelos;
+        this.quantidadeDePatas = quantidadeDePatas;
     }
-});
+    dizerNome() {
+        console.log('Meu nome é: ', this.nome);
+    }
+}
+const cachorro = new Mamifero('billy', true, 4);
+cachorro.dizerNome();
+const object = {
+    nome: 'string',
+    idade: 23232
+};
